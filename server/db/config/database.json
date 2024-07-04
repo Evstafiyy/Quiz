@@ -1,6 +1,6 @@
 {
   "development": {
-		"username": "zagrebelnyy_andrey",
+		"username": "admin",
 		"password": "123",
 		"database": "quiz_database",
 		"host": "127.0.0.1",
