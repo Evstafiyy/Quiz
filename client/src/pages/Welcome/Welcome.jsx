@@ -7,9 +7,6 @@ function Welcome() {
       <div>
         <header> Welcome to <strong>QUIZ</strong></header>
        <p>Команда III Медведя</p>
-         
-       
-
         <img
           className="foto"
           src="https://bronk.club/uploads/posts/2022-08/1660255508_52-bronk-club-p-otkritki-s-medvedyami-prikolnie-55.jpg"
