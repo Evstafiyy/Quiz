@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import request from "../../services/axios";
+import './Ask.css'
 
 
 function Ask() {
@@ -19,10 +20,11 @@ console.log(asks);
 
   return (
     <div>
-      <h1>Вопрос</h1>
-      <div>
-        <p>{asks[quest]?.image}</p>
+      <h2>Вопрос</h2>
+      <div className="block">
+        <img src={asks[quest]?.image}/> 
         <p>{asks[quest]?.question}</p>
+		  <input type="text" />
       </div>
       <button onClick={()=>setQuest((prev)=>prev + 1)}>Далее
         {/* <Link to={`/ask/${+id + 1}`}>Далее</Link> */}
