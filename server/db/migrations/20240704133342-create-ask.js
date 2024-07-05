@@ -15,19 +15,28 @@ module.exports = {
       answer: {
         type: Sequelize.STRING
       },
-      img: {
+      image: {
         type: Sequelize.STRING
       },
-      topicId: {
-        type: Sequelize.INTEGER
+      category_id: {
+        type: Sequelize.INTEGER,
+		  references: {
+			model: 'Categories',
+			key: 'id', 
+			},
+			onDelete: 'CASCADE',
+			onUpdate: 'CASCADE',
       },
       createdAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+		  defaultValue: Sequelize.fn('NOW'),
+
       },
       updatedAt: {
         allowNull: false,
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+		  defaultValue: Sequelize.fn('NOW'),
       }
     });
   },

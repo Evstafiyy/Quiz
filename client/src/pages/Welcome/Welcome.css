@@ -1,0 +1,16 @@
+/* * {
+    background: linear-gradient(to right, red, blue);
+} */
+.foto {
+  display: flex;
+  justify-content: space-around;
+
+  width: 400px;
+  height: 400px;
+  gap: 30px;
+}
+
+.group {
+  width: 200px;
+  height: 100px;
+}

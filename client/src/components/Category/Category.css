@@ -1,0 +1,39 @@
+
+.card-block{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	gap: 20px;
+}
+
+.category-card{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	font-size: 42px;
+	border: 1px solid #ffffff;
+	width: 400px;
+	height: 500px;
+	margin: 20px;
+	border-radius: 20px;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.category-card:hover{
+scale: 110%;
+}
+
+.category-card img{
+	position: absolute;
+	top:-20px;
+	margin-top: 50px;
+	scale: 1.2;
+	z-index: 10;
+}
+
+
+.cat-title{
+	z-index: 10;
+}
