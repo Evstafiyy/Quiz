@@ -7,12 +7,12 @@ module.exports = {
       'Categories',
       [
         {
-			name: 'Угадай страну по фотографии',
-			image: 'location.jpg',
+			name: 'Угадай страну',
+			image: 'https://kult-urolog.com/wp-content/uploads/2023/07/globe_terrestre_scan_globe.jpg',
         },
 		  {
-			name: 'Кто это сказал?',
-			image: 'quotes.jpg',
+			name: 'Цитаты',
+			image: 'https://s1.tchkcdn.com/g-LB7hONdudzdWMZJ6xk7tpg/11/131920/660x480/f/0/jjjj.jpg',
         },
       ],
       {}
