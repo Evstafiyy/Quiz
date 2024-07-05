@@ -13,7 +13,7 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     const { id } = req.params;
-    const data = await Ask.findOne({ where: { owner_id: id } });
+    const data = await Ask.findAll({ where: { category_id: id } });
     res.status(200).json(data);
   } catch ({ message }) {
     res.status(500).json({ error: message });
