@@ -2,11 +2,13 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import request from "../../services/axios";
 
+
 function Ask() {
   const { id } = useParams();
-  const [asks, setAsks] = useState({});
+  const [asks, setAsks] = useState([]);
     const [count, setCount] = useState(0);
-
+	 const [quest, setQuest] = useState(0);
+console.log(asks);
   useEffect(() => {
     request.get(`/ask/${id}`).then((response) => setAsks(response.data));
   }, []);
@@ -19,10 +21,10 @@ function Ask() {
     <div>
       <h1>Вопрос</h1>
       <div>
-        <p>{asks?.image}</p>
-        <p>{asks?.question}</p>
+        <p>{asks[quest]?.image}</p>
+        <p>{asks[quest]?.question}</p>
       </div>
-      <button>Далее
+      <button onClick={()=>setQuest((prev)=>prev + 1)}>Далее
         {/* <Link to={`/ask/${+id + 1}`}>Далее</Link> */}
         </button>
     </div>
