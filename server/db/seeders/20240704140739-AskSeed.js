@@ -9,35 +9,35 @@ module.exports = {
         {
 			question: 'Где это?',
 			answer: 'Байкал',
-			image: '1.baikal.jpg',
+			image: '/img/1.baikal.jpg',
 			category_id: 1
         },
 		  {
 			question: 'Где это?',
 			answer: 'Чехия',
-			image: '2.karlov_most.jpg',
+			image: '/img/2.karlov_most.jpg',
 			category_id: 1
         },
 		  {
 			question: 'Где это?',
 			answer: 'Греция',
-			image: '3.mykonos.jpg',
+			image: '/img/3.mykonos.jpg',
 			category_id: 1
         },
 		  {
 			question: 'Где это?',
 			answer: 'Германия',
-			image: '4.neuschwanstein-castle.webp',
+			image: '/img/4.neuschwanstein-castle.webp',
 			category_id: 1
         },
 		  {
 			question: 'Где это?',
 			answer: 'Израиль',
-			image: '5.stena_placha.webp',
+			image: '/img/5.stena_placha.webp',
 			category_id: 1
         },
 		  {
-			question: 'Кто это сказал?\n Однополые браки — это личное дело мужчины и женщины',
+			question: 'Кто это сказал?\r\n Однополые браки — это личное дело мужчины и женщины',
 			answer: 'Шварцнеггер',
 			image: '',
 			category_id: 2
